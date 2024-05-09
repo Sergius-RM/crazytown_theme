@@ -1,0 +1,30 @@
+.events_grid_section
+    margin-bottom: 100px
+.blogrid_articles
+    .articles-item
+        .articles-content
+            padding: 20px 0px
+            .meta_data, .meta_time
+                margin-bottom: 5px
+            i
+                margin-right: 5px
+.image
+    position: relative
+    .meta_info
+        padding: 15px
+        background: $seconday-color
+        color: $light-color
+        position: absolute
+        width: 100%
+        transform: translateY(-100%)
+        opacity: 0
+        transition: 0.3s
+        .meta_data
+            margin-right: 15px
+            font-size: inherit
+            line-height: inherit
+            margin-bottom: inherit
+    &:hover
+        .meta_info
+            opacity: 1
+            transition: 0.3s

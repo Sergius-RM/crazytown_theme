@@ -1,0 +1,74 @@
+.pricing_section
+    margin-bottom: 50px
+    position: relative
+    h6
+        font-size: $h4-size
+        line-height: $lh-p
+        color: $primary-color
+        text-align: center
+        max-width: 600px
+        margin: 0 auto
+        margin-bottom: 0px
+        margin-bottom: 20px
+    h2
+        font-size: $h2-size
+        line-height: $lh-2
+        color: $base-color
+        text-align: center
+        margin-bottom: 100px
+    .pricing_list
+        > .pricing_loop
+            &:nth-of-type(3n+2)
+                bottom: 50px
+                position: relative
+    .pricing_item
+        background: $seconday-color
+        border-radius: 15px
+        margin-bottom: 20px
+        padding: 35px 40px
+        color: $light-color
+        .pricing_info
+            margin-bottom: 20px
+            p
+                font-size: 16px
+                font-weight: 300
+                color: $light-color
+                min-height: 100px
+        h4
+            font-size: $h5-size
+            line-height: $lh-4
+            color: $primary-color
+        .price, .pricelist
+            margin-bottom: 30px
+        .price, i
+            font-size: $h3-size
+            line-height: $lh-2
+            font-weight: 900
+            color: $primary-color
+            font-family: $poppins-fonts
+        .pricelist_item p
+            color: $light-color
+            margin-bottom: 10px
+            &::before
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-right: 10px
+                top: 3px
+                position: relative
+                color: $primary-color
+                font-weight: 900
+        .cta_btn
+            font-size: $f7
+            line-height: $lh-6
+    :not(:root:root) .equal-height
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        flex-wrap: wrap
+
+    :not(:root:root) .equal-height > *
+        -webkit-box-flex: 1
+        -ms-flex: 1
+        flex: 1
+        margin: 0
+

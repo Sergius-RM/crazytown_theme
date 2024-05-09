@@ -1,0 +1,351 @@
+@font-face
+    font-family: 'Montserrat'
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Montserrat/Montserrat-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Brother 1816'
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Book.eot')
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Book.eot?#iefix') format('embedded-opentype'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Book.woff') format('woff'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Book.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Brother 1816 Medium'
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Medium.eot')
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Medium.eot?#iefix') format('embedded-opentype'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Medium.woff') format('woff'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Medium.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Brother 1816 Bold'
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Bold.eot')
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Bold.eot?#iefix') format('embedded-opentype'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Bold.woff') format('woff'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Brother1816/Brother-1816-Bold.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Poppins'
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-SemiBold.eot')
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-SemiBold.woff') format('woff'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Poppins Regular'
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Regular.eot')
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Regular.woff') format('woff'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Poppins Bold'
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Bold.eot')
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Bold.woff') format('woff'),
+    src: url('/wp-content/themes/crazy-town/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+html
+    scroll-behavior: smooth
+body
+    color: $base-color
+    font-family: $brother-fonts
+    font-size: $rootSize
+    line-height: $lh-p
+h1, h2, h3, h4 ,h5, h6
+    color: $seconday-color
+    font-family: $font-texts
+    font-weight: 700
+h1, h2, h3, h4 ,h5, h6
+    font-family: $poppins-bold-fonts
+// h4 ,h5, h6
+//     font-family: $poppins-fonts
+h1
+    line-height: $lh-1
+    font-size: $h1-size
+h2
+    line-height: $lh-1
+    font-size: $h2-size
+h3
+    line-height: $lh-2
+    font-size: $h3-size
+h4
+    line-height: $lh-3
+    font-size: $h4-size
+h5
+    line-height: $lh-3
+    font-size: $h5-size
+h6
+    line-height: $lh-3
+    font-size: $h6-size
+p
+    line-height: $lh-p
+    color: $base-color
+    font-family: $brother-m-fonts
+ul
+    font-family: $brother-m-fonts
+strong
+    font-family: $brother-bold
+.blog-details-content
+    p
+        font-size: $f4
+.container
+    max-width: 1320px
+.darkmode
+    color: #fff
+    a
+        color: #fff
+.is_onmobile
+    display: none
+.no_mobile
+    display: contents
+svg
+    -webkit-background-clip: text
+.header_top
+    background: $seconday-color
+    height: 40px
+header
+    padding: 20px 25px
+    .custom-logo
+        width: 140px
+        height: auto
+.cta_btn
+    +cta-btn
+    margin-bottom: 10px
+    display: inline-block
+    &:hover
+        +cta-btn-hover
+        color: $primary-color
+.order_section
+    margin-bottom: 100px
+    .order_content
+        margin-bottom: 50px
+    .order_form
+        background: $seconday-color
+        border-radius: 19px
+        padding: 50px 65px
+        label
+            color: #fff
+        h4
+            color: #fff
+            font-weight: 700
+            font-size: $h5-size
+            line-height: $lh-4
+            margin-bottom: 20px
+        input[type=text]
+            margin-bottom: 25px !important
+            border: 1px solid #B3B3B3
+            border-radius: 20px
+            padding: 10px 20px !important
+            color: #B3B3B3
+        .gform_button
+            padding: 8px 30px
+            background: $primary-color
+            border-radius: 30px
+            color: $seconday-color
+            border: 0
+            margin: 0 auto
+            font-weight: 600
+            &:hover
+                +btn-option-hover
+        .gfield_radio
+            text-align: left
+            display: flex
+            margin-bottom: 25px
+            div
+                display: inline-block
+                margin-right: 20px
+            .gfield-choice-input+label
+                max-width: none
+        .gform_fileupload_rules, .gform_drop_instructions
+            display: none
+        #field_2_8, #field_2_9
+            display: flex
+            background: #fff
+            border-radius: 24px
+            padding: 10px 20px !important
+            text-align: left
+            margin-bottom: 25px
+            .gfield_description
+                color: #757575
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+                padding: 0
+        .ginput_container_fileupload
+            input #file-upload-button
+                background: #333 !important
+                padding: 20px !important
+                display: block
+        .gform_drop_area
+            padding: 0
+            margin-bottom: 0
+            button
+                background: url(/wp-content/themes/crazy-town/assets/images/Download.png) 50% 50% no-repeat
+                font-size: 0
+                border: 0
+                padding: 10px 10px
+                width: 10pxpx
+                height: 10px
+.search_form_panel
+    .read_more_link
+        margin-right: 20px
+        margin-top: 40px
+        &::after
+            content: none !important
+        &::before
+            font-family: bootstrap-icons
+            content: "\f12f"
+            margin-right: 10px
+            top: 3px
+            position: relative
+.lost_page
+    .container
+        margin-top: 100px
+        margin-bottom: 150px
+    h1
+        font-size: 300px
+        color: #DEDEDE
+        font-weight: 900
+        text-align: center
+        line-height: 363px
+    h2
+        font-size: 36px
+        line-height: 44px
+        text-align: center
+        color: $base-color
+        line-height: 44px
+        margin-bottom: 50px
+    .cta_btn
+        display: block
+        width: fit-content
+    .lost_search
+        padding: 60px 0 80px 0
+        background: $seconday-color
+        border-bottom: 10px solid $primary-color
+        h6
+            color: $light-color
+            margin-bottom: 50px
+            font-weight: 300
+        .search
+            .search-field
+                padding: 10px 15px
+                border: 0
+                border-radius: 15px
+            .search-submit
+                background-size: inherit
+                background: $primary-color
+                border-radius: 30px
+                color: $light-color
+                border: 0
+                padding: 12px 25px
+
+.swiper
+    overflow: initial
+    position: relative
+    transform: translateX(-22.5%)
+    .swiper-wrapper
+        transform: translate3d(15%, 0px, 0px)
+    .swiper-button-prev,
+    .swiper-button-next
+        border: 0
+        border-radius: 50%
+        background: #dd2228
+        font-size: 0
+        width: 40px
+        height: 40px
+    .swiper-button-prev
+        position: absolute
+        top: -30px
+        -webkit-transform: translateY(-50%)
+        transform: translateY(-50%)
+        z-index: 9
+        left: 95vw
+    .swiper-button-next
+        position: absolute
+        top: -30px
+        -webkit-transform: translateY(-50%)
+        transform: translateY(-50%)
+        z-index: 9
+        left: 100vw
+    .swiper-button-next::after
+        content: "\f285"
+        color: #fff
+        display: block
+        font-family: bootstrap-icons
+        font-size: 19px
+        transform: translateY(-50%)
+        line-height: 0
+    .swiper-button-prev::after
+        content: "\f284"
+        color: #fff
+        display: block
+        font-family: bootstrap-icons
+        font-size: 19px
+        transform: translateY(-50%)
+        line-height: 0
+.swiper.swiper_location
+    transform: translateX(-18%)
+    .swiper-button-prev
+        left: 93vw
+    .swiper-button-next
+        left: 98vw
+
+.argument_lists_section .cta_btn
+    width: fit-content !important
+.pum-theme-cutting-edge
+    .pum-container
+        background-color: #39192A !important
+        border: 0 !important
+        padding: 60px !important
+        border-radius: 30px !important
+    .pum-title
+        color: #DD2228 !important
+        text-align: center !important
+        text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 )
+        font-family: "Poppins Bold" !important
+        font-size: 36px !important
+        line-height: 42px !important
+        margin-bottom: 30px !important
+    p
+        color: #fff
+        margin-bottom: 20px
+    .gform_wrapper.gravity-theme .gform_footer input
+        border-radius: 30px
+        color: #fff
+        margin: 0 auto
+        background: #DD2228
+        border: 0
+        padding: 10px 40px
+    .gform-body input,
+    .gform-body textarea,
+    .gform-body select
+        border: 0
+        padding: 10px 20px !important
+        border-radius: 20px
+        font-size: 15px
+        color: #333
+        background: #fff
+        font-family: Verdana, Tahoma, sans-serif
+        margin-bottom: 10px !important
+    .pum-close
+        color: #fff !important
+        background: #DD2228 !important
+        border-radius: 50% !important
+        height: 31px !important
+        width: 24px !important
+        right: 20px !important
+        top: 20px !important

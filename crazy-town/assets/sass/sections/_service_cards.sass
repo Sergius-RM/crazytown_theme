@@ -1,0 +1,51 @@
+.argument_lists_section
+    margin-bottom: 140px
+    margin-top: 70px
+    .argument_wrap
+        padding: 50px 30px
+        border-radius: 20px
+        transition: 0.2s
+        display: flex
+        flex-direction: column
+        &:hover
+            background: $seconday-color
+            color: #fff
+            cursor: pointer
+            transition: 0.2s
+            h4, h3, h2
+                color: #fff
+    img
+        margin-bottom: 25px
+        width: 60px
+        height: 60px
+    h4
+        font-size: 18px
+        line-height: 27px
+        color: #282828
+    h2
+        font-size: 34px
+    .argument_content
+        margin-bottom: 20px
+        min-height: 80px
+        font-family: $brother-m-fonts
+
+    .cta_btn
+        display: block
+        color: $primary-color
+        font-weight: 600
+        background: none
+        padding: 8px 0px
+        margin-top: auto
+        width: fit-content
+
+    :not(:root:root) .equal-height
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        flex-wrap: wrap
+
+    :not(:root:root) .equal-height > *
+        -webkit-box-flex: 1
+        -ms-flex: 1
+        flex: 1
+        margin: 0

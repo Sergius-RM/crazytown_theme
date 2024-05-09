@@ -1,0 +1,373 @@
+.site-navigation
+    width: 100%
+    text-align: right
+    .menu-icon
+        display: inline-block
+        width: 54px
+        height: 54px
+        float: left
+        margin-right: 15px
+        background-size: contain
+        background-position: 50% 0%
+        background-repeat: no-repeat
+    a
+        .menu-image
+            display: block
+            width: 60px
+            height: 60px
+            float: left
+    .shop_btn
+        display: inline-block
+        position: relative
+        margin-left: 40px
+        +btn-option
+        &:hover
+            +btn-option-hover
+            cursor: pointer
+        &:hover > a
+            color: $primary-color
+        a
+            color: $light-color
+            font-weight: 600
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+            &:hover
+                border-bottom: 0
+                padding-bottom: 0
+                color: $primary-color
+    ul
+        margin-bottom: 0
+        position: relative
+        li
+            display: inline-block
+            padding: 5px 15px
+            position: relative
+            a
+                text-decoration: none
+                color: #fff
+                font-family: $brother-fonts
+                padding-bottom: 5px
+                &:hover
+                    +link-hover
+                    color: $primary-color
+                    border-color: $primary-color
+        .sub-menu
+            text-align: left
+            position: absolute
+            left: 0
+            top: -500px
+            opacity: 0
+            transition: 0.5s
+            width: max-content
+            z-index: -1
+            background: #fff
+            padding: 45px 50px
+            border-radius: 0 0 20px 20px
+            li
+                display: block
+                // &::before
+                //     content: ''
+                //     width: 54px
+                //     height: 54px
+                //     display: block
+                //     float: left
+                //     margin-right: 15px
+                //     background: url(/wp-content/themes/crazy-town/assets/images/icons/storm_cloud.svg) 50% 50% no-repeat
+                //     background-size: cover
+                a
+                    font-family: $poppins-bold-fonts
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 26px
+                    color: #000000
+                    display: initial
+                    border-bottom: 1px dotted #ffffff
+                    padding-bottom: 0
+                    &:hover
+                        border-bottom: 1px dotted $primary-color
+                        color: $primary-color
+                .description
+                    font-family: $brother-fonts
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 21px
+                    color: #000000
+                    display: block
+        > .menu-item-has-children
+            &::after
+                content: '\F282'
+                width: 20px
+                height: 20px
+                display: block
+                font-family: bootstrap-icons
+                float: right
+                transition: 0.5s
+                margin-left: 10px
+                color: #fff
+            .sub-menu
+                .menu-item-has-children
+                    &::after
+                        content: ''
+        > .menu-item-has-children
+            &:hover
+                .sub-menu
+                    top: 28px
+                    opacity: 1
+                    transition: 0.3s
+                &::after
+                    transition: 0.3s
+                    // transform: rotateX(-180deg)
+                    content: '\F235'
+                    color: #fff
+                    width: 20px
+                    height: 20px
+                    display: block
+                    font-family: bootstrap-icons
+                    position: relative
+                    bottom: -10px
+                    font-size: 30px
+        .mega_menu
+            .sub-menu
+                padding: 45px 0px
+                li
+                    z-index: 1
+                    position: relative
+                    &::before
+                        content: none
+                    a
+                        font-family: $brother-fonts
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 21px
+                        color: #000000
+                    .sub-menu
+                        background: #fff
+                        width: fit-content
+                        position: relative
+                        padding: 0
+                        column-count: 2
+                        gap: 25px
+                        top: 20px
+                        li
+                            padding: 0
+                            margin-bottom: 15px
+                            display: table
+                            max-width: 261px
+                            a
+                                font-family: $poppins-bold-fonts
+                                font-weight: 600
+                                font-size: 14px
+                                line-height: 26px
+                                color: #000000
+                                display: initial
+                                z-index: 99
+                                position: relative
+                                border-bottom: 1px dotted #ffffff
+                                transition: 0.2s
+                                &:hover
+                                    border-bottom: 1px dotted $primary-color
+                                    color: $primary-color
+                                    transition: 0.2s
+                                    padding-bottom: 0
+                                .description
+                                    font-family: $brother-fonts
+                                    font-weight: 400
+                                    font-size: 14px
+                                    line-height: 21px
+                                    color: #000000
+                                    display: block
+            > .sub-menu
+                background: #fff
+                display: flex
+                translate: -50%
+                border-radius: 0 0 20px 20px
+                display: flex !important
+                &:hover
+                    li
+                        &::after
+                            transform: none
+                > li
+                    cursor: pointer
+                    padding: 0 45px
+                    > a
+                        color: $primary-color
+                        font-family: $poppins-bold-fonts
+                        font-weight: 700
+                        font-size: 22px
+                        line-height: 27px
+                        display: flex
+                        width: fit-content
+                > li::after
+                    background: url(/wp-content/themes/crazy-town/assets/images/icons/li_saparator.svg) 50% 50% repeat-y
+                    background-size: cover
+                    width: 10px
+                    height: 100%
+                    top: 0
+                    position: absolute
+                    right: 0
+                > li:last-child::after
+                    display: none
+.one_column
+    .sub-menu
+        column-count: 1 !important
+        gap: 0px !important
+.navbar-toggler-icon
+    position: absolute
+    right: 30px
+    top: 20px
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+.mob_menu
+    +.show
+    background: #000000e6
+    padding: 40px
+    width: 100%
+    top: 0
+    position: fixed
+    height: 100%
+    overflow: scroll
+    padding-top: 100px
+    .site-navigation
+    ul
+        padding: 0
+        li
+            display: block
+            padding: 15px 15px
+            list-style: none
+            a
+                text-decoration: none
+                color: #fff
+                font-family: $font-texts
+                width: 100%
+                font-size: 18px
+                font-weight: 600
+                .description
+                    display: block
+                    color:#808080
+                    margin-top: 10px
+                    font-size: $f6
+                    line-height: $lh-p
+                    font-weight: 300
+                    font-family: Verdana, Tahoma, sans-serif
+        .menu-item-has-children
+           > a
+                // color: $primary-color
+        .shop_btn
+            float: none
+            width: fit-content
+            margin: 0 auto
+            background: #fff
+            padding: 15px 30px
+            font-weight: 600
+            background: $primary-color
+            border-radius: 30px
+            a
+                color: $light-color
+        .sub-menu
+            margin-left: 15px
+            li
+                // &::before
+                //     content: ''
+                //     width: 34px
+                //     height: 34px
+                //     display: block
+                //     float: left
+                //     margin-right: 15px
+                //     background: url(/wp-content/themes/crazy-town/assets/images/icons/storm_cloud.svg) 50% 0% no-repeat
+                //     background-size: contain
+                a
+                    font-weight: 400
+                    font-size: 16px
+            // .sub-menu
+            //     li
+            //         &::before
+            //             content: ''
+            //             width: 34px
+            //             height: 34px
+            //             display: block
+            //             float: left
+            //             margin-right: 15px
+            //             background: url(/wp-content/themes/crazy-town/assets/images/icons/storm_cloud.svg) 50% 0% no-repeat
+            //             background-size: contain
+        .mega_menu
+            a
+                color: $light-color
+            .menu-item-has-children
+                &::before
+                        content: none
+                > a
+                    color: $primary-color
+                    line-height: 40px
+                    font-size: 18px
+                    font-weight: 600
+
+.mob_menu
+    .menu-main-menu-container
+        .menu
+            li
+                width: fit-content
+                position: relative
+            // .sub-menu
+            //     display: none
+            //     opacity: 0
+            //     transition: 0.3s
+            // .menu-item-has-children
+            //     &:hover
+            //         .sub-menu
+            //             opacity: 1
+            //             transition: 0.3s
+            //             display: block
+    .menu > .menu-item-has-children::after
+        content: '\F282'
+        width: 20px
+        height: 20px
+        display: block
+        font-family: bootstrap-icons
+        float: right
+        transition: 0.5s
+        margin-left: 10px
+        color: #fff
+        top: 14px
+        position: absolute !important
+        left: 25vh
+        z-index: 9999
+        cursor: pointer
+    .menu > .menu-item-has-children:hover::after
+        transition: 0.3s
+        transform: rotateX(-180deg)
+        content: '\F282'
+        color: #fff
+        width: 20px
+        height: 20px
+        display: block
+        font-family: bootstrap-icons
+        position: relative
+        left: 25vh
+        cursor: pointer
+    .menu > .menu-item-has-children .menu-trigger
+        width: 20px
+        height: 20px
+        display: block
+        float: right
+        margin-left: 10px
+        top: 14px
+        position: absolute !important
+        left: 25vh
+        z-index: 99999
+        cursor: pointer
+.pagination
+    margin-top: 30px
+    .nav-links
+        .page-numbers
+            color: #333
+            text-decoration: none
+            margin-right: 15px
+            font-size: 16px
+            &:hover
+                color: $primary-color
+            .current
+                color: $primary-color
+
